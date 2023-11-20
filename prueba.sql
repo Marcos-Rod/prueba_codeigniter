@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2023 at 05:35 AM
+-- Generation Time: Nov 21, 2023 at 12:56 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -33,17 +33,17 @@ CREATE TABLE `addresses` (
   `delegacion` varchar(255) NOT NULL,
   `estado` varchar(60) NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 --
 -- Dumping data for table `addresses`
 --
 
 INSERT INTO `addresses` (`id`, `codigo_postal`, `colonia`, `delegacion`, `estado`, `user_id`) VALUES
-(4, 55647, 'ldReIBYN', 'TcktQeQc1VZ', 'k6pJU', 1),
-(5, 77564, 'IAFlo', 'wDEht', '2D4V4o', 2),
-(6, 11156, 'nscttdlIiG', 'xKwlxUJDnADEU', 'TFJBhq', 3),
-(7, 67894, 'qbFph9FQ3', '4PU2i', '0ugWUH82MuEufVY', 4);
+(1, 45627, 'RpjyB', 'HC4vedn', '9g43H', 1),
+(2, 14235, 'bZ50rOO0we0tr', '9V47RlxQfdn', '726PdNAULH', 2),
+(3, 77645, 'aSuNQZ', 'Pzczs6', 'k6hSdy', 3),
+(4, 88645, '0gklNkxhMO0', '7OJXpQL', 'Lbcl1e41Uz9XSDF', 4);
 
 -- --------------------------------------------------------
 
@@ -70,10 +70,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `last_name`, `gender`, `email`, `phone`, `user_type`, `status`, `password`, `created_at`, `updated_at`) VALUES
-(1, 'User 1', 'Apellido 1', 'Male', 'mail@mail.com', '5512345678', 'Administrativo', '1', '$2y$12$PUtyQlDjGtiL8phNQ9zx.exSSdvXY6PV31HuWxkdIDQenP9I0J1RS', '2023-11-20 05:29:00', '2023-11-20 05:29:00'),
-(2, 'User 2', 'Apellido2', 'Male', 'mail@mail.com', '5512345678', 'Administrativo', '1', '$2y$12$eGSMy31JqSqCHaQqgvfjfuljRoC89rqVwtGe8FQAIEbBjCJk7Gkeq', '2023-11-20 05:29:00', '2023-11-20 05:29:00'),
-(3, 'User 3', 'Apellido 3', 'Female', 'mail3@mail.com', '5512345678', 'Administrativo', '1', '$2y$12$lNa/1Vo3VmxPtHLtaDaAqepZ8FH5pKg92WPFv2zreB8MZ4LcNy7La', '2023-11-20 05:30:00', '2023-11-20 05:30:00'),
-(4, 'User 4', 'Apellido 4', 'Female', 'mail4@mail.com', '5512345678', 'Administrativo', '1', '$2y$12$yu88mUXqo4uowUvIUjybuORd8/MdCI5Wlk6xvU02mRzZJryq/.ZWi', '2023-11-20 05:33:00', '2023-11-20 05:33:00');
+(1, 'Marcos', 'Rodriguez', 'Male', 'tmlwar01@gmail.com', '5512345678', 'Administrativo', '1', '$2y$12$fudYAq2wjANH7y6zw68RP.fQaVOoWMOakmm2DpD4vIZW3WsE8FVie', '2023-11-21 00:53:00', '2023-11-21 00:53:00'),
+(2, 'Jose', 'Peres', 'Male', 'mail1@mail.com', '5512345678', 'Administrativo-Operativo', '1', '$2y$12$gG8Y3lNnHUBR3Aee66maEOJLR4t3r3uqe7FqMdMl4d.8FOhy9DZxq', '2023-11-21 00:53:00', '2023-11-21 00:53:00'),
+(3, 'Brenda', 'Reyes', 'Female', 'mail3@mail.com', '5512345678', 'Operativo', '1', '$2y$12$byhEdoUSNbFOwn4Wmu7ueeYCTs.QpCGgJJZCZKrxosfbFlo8V50pm', '2023-11-21 00:54:00', '2023-11-21 00:54:00'),
+(4, 'Teodoro', 'Montes', 'Male', 'mail4@mail.com', '5512345678', 'Administrativo', '2', '$2y$12$N8HbQzA.dn6b.VnLyF0l9evbDHMd/AfBeUuqqy6KISszH.KOlZrYC', '2023-11-21 00:54:00', '2023-11-21 00:54:00');
 
 --
 -- Indexes for dumped tables
@@ -100,7 +100,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `addresses`
 --
 ALTER TABLE `addresses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `users`
 --

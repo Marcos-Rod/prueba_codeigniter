@@ -18,6 +18,15 @@
         <!-- Favicon -->
         <link rel="icon" href="<?php echo base_url('favicon.ico'); ?>">
 
+        <style>
+            label.error{
+                color: #ff3a3a;
+                width: 100%;
+                display: block;
+                order: 5;
+            }
+        </style>
+        
     </head>
     <body>
 
